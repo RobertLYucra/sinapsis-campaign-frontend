@@ -23,6 +23,15 @@
     font-size: 18px !important;
 }
 
+
+.truncate-text-message {
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+  }
+
 .messages_main {
     padding: 25px;
 }
@@ -55,6 +64,17 @@
     }
 }
 
+
+
+.truncate-text-name-message {
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+  }
+
+
 .custom-table {
     width: 100%;
     border-radius: 8px;
@@ -63,12 +83,13 @@
     th,
     td {
         padding: 12px 16px;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     th {
         background-color: #f5f5f5;
         font-weight: 600;
+        font-size: 12px;
     }
 
     tr:nth-child(even) td {

@@ -9,33 +9,38 @@
         <mat-icon color="primary">mail</mat-icon>
         <h2>Lista de Mensajes de: {{campaignDataParams.name}}</h2>
       </div>
-    
+
       <table mat-table [dataSource]="dataSource" class="mat-elevation-z2 custom-table">
-  
+
         <!-- N° -->
         <ng-container matColumnDef="idMessage">
           <th mat-header-cell *matHeaderCellDef> N° </th>
-          <td mat-cell *matCellDef="let element ; let i = index"> {{ i + 1 + (paginator.pageIndex * paginator.pageSize) }} </td>
+          <td mat-cell *matCellDef="let element ; let i = index"> {{ i + 1 + (paginator.pageIndex * paginator.pageSize)
+            }} </td>
         </ng-container>
-    
+
         <!-- Campaña -->
         <ng-container matColumnDef="campaigName">
           <th mat-header-cell *matHeaderCellDef> Campaña </th>
-          <td mat-cell *matCellDef="let element"> {{ element.campaigName }} </td>
+          <td mat-cell *matCellDef="let element" style="max-width: 200px;">
+            <div class="truncate-text-name-message">
+              <p style="margin-bottom: -5px; font-weight: 500;">{{ element.campaigName }}</p>
+            </div>
+          </td>
         </ng-container>
-    
+
         <!-- Fecha -->
         <ng-container matColumnDef="processDate">
           <th mat-header-cell *matHeaderCellDef> Fecha </th>
           <td mat-cell *matCellDef="let element" style="min-width: 110px;"> {{ element.processDate }} </td>
         </ng-container>
-    
+
         <!-- Hora -->
         <ng-container matColumnDef="processHour">
           <th mat-header-cell *matHeaderCellDef> Hora </th>
           <td mat-cell *matCellDef="let element"> {{ element.processHour }} </td>
         </ng-container>
-    
+
         <!-- Estado -->
         <ng-container matColumnDef="shippingStatusName">
           <th mat-header-cell *matHeaderCellDef> Estado </th>
@@ -49,19 +54,23 @@
             </span>
           </td>
         </ng-container>
-    
+
         <!-- Teléfono -->
         <ng-container matColumnDef="phone">
           <th mat-header-cell *matHeaderCellDef> Teléfono </th>
           <td mat-cell *matCellDef="let element"> {{ element.phone }} </td>
         </ng-container>
-    
+
         <!-- Mensaje -->
         <ng-container matColumnDef="messageText">
           <th mat-header-cell *matHeaderCellDef> Mensaje </th>
-          <td mat-cell *matCellDef="let element"> {{ element.messageText }} </td>
+          <td mat-cell *matCellDef="let element" style="width: 320px;">
+
+            <div class="truncate-text-message" [matTooltip]="element.messageText" matTooltipPosition="below">
+              {{ element.messageText }}
+            </div>
         </ng-container>
-    
+
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
       </table>
