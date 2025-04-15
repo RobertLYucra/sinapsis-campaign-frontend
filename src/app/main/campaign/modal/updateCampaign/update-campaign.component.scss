@@ -1,0 +1,76 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cli-modalclose {
+    position: relative;
+
+    & mat-icon {
+        position: absolute;
+        right: -12px;
+        top: -12px;
+        border-radius: 2px;
+        color: #50535A;
+        transition: ease .3s;
+
+        &:hover {
+            cursor: pointer;
+            color: #E66C64;
+        }
+    }
+}
+
+.icon-20 {
+    color: #eac344;
+    width: 18px !important;
+    height: 18px !important;
+    font-size: 18px !important;
+}
+
+.create-campaign{
+    padding: 25px;
+    background-color: #fafafa;
+
+    .detalles{
+        .titulo{
+            color: #094d9b;
+            text-align: center;
+        }
+    }
+}
+
+
+.campaign-form {
+    padding: 1.5rem;
+    background-color: #fafafa;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+    .form-actions{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .btn-submit-update {
+            background: #fff;
+            border: 1px solid #094d9b;
+            color: #094d9b;
+            transition: 0.3s ease;
+            &:hover {
+                background: #094d9b;
+                color: #fff;
+            }
+        }
+    }
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+    gap: 1.2rem;
+  }
+  
+  .full-width {
+    grid-column: 1 / -1; // hace que el textarea ocupe todo el ancho
+  }

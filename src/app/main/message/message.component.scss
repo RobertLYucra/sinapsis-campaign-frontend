@@ -1,0 +1,102 @@
+.cli-modalclose {
+    position: relative;
+
+    & mat-icon {
+        position: absolute;
+        right: -12px;
+        top: -12px;
+        border-radius: 2px;
+        color: #50535A;
+        transition: ease .3s;
+
+        &:hover {
+            cursor: pointer;
+            color: #E66C64;
+        }
+    }
+}
+
+.icon-20 {
+    color: #eac344;
+    width: 18px !important;
+    height: 18px !important;
+    font-size: 18px !important;
+}
+
+.messages_main {
+    padding: 25px;
+}
+
+.detalles-table {
+    margin-top: 15px;
+}
+
+
+.message-card {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.message-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+
+    h2 {
+        margin: 0;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    mat-icon {
+        font-size: 24px;
+    }
+}
+
+.custom-table {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+
+    th,
+    td {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+
+    th {
+        background-color: #f5f5f5;
+        font-weight: 600;
+    }
+
+    tr:nth-child(even) td {
+        background-color: #fafafa;
+    }
+}
+
+.badge {
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+    text-align: center;
+    width: 90%;
+
+    &-success {
+        background-color: #c8e6c9;
+        color: #256029;
+    }
+
+    &-pending {
+        background-color: #ffe082;
+        color: #795548;
+    }
+
+    &-error {
+        background-color: #ffcdd2;
+        color: #c62828;
+    }
+}

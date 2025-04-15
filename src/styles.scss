@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: auto; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #f9f9f9;}
+
+// src/styles/_variables.scss
+
+// Colores primarios
+$buttons-primary-color: #094d9b;
+
+$text-green-color : #256029;
+$text-yellow-color : #795548;
+$text-red-color : #c62828;
+
+
+$bg-green-color : #256029;
+$bg-yellow-color : #795548;
+$bg-red-color : #c62828;
+
+// Colores secundarios
+$secondary-color: #03dac6;
+$secondary-dark-color: #018786;
+$secondary-light-color: #66fff9;
+
+// Colores de fondo
+$background-color: #f5f5f5;
+$background-dark-color: #e1e1e1;
+
+// Colores de texto
+$text-color: #000000;
+$text-light-color: #757575;

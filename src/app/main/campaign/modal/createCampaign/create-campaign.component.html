@@ -1,0 +1,58 @@
+<div class="create-campaign">
+  <div class="cli-modalclose ">
+    <mat-icon class="icon-20" matTooltip="Cerrar" (click)="dialogRef.close()">close</mat-icon>
+  </div>
+<div class="detalles">
+  <h2 class="titulo">Crear Campaña</h2>
+</div>
+<form [formGroup]="campaignForm" class="campaign-form" (submit)="createCampaign()">
+  <div class="form-grid">
+    <!-- Usuario -->
+    <mat-form-field appearance="outline">
+      <mat-label>Usuario</mat-label>
+      <mat-select formControlName="userId" required>
+        <mat-option *ngFor="let user of usersList" [value]="user.idUser">
+          {{ user.username }}
+        </mat-option>
+      </mat-select>
+      <mat-error *ngIf="campaignForm.get('userId')?.hasError('required')">
+        El usuario es obligatorio.
+      </mat-error>
+    </mat-form-field>
+
+    <!-- Nombre -->
+    <mat-form-field appearance="outline">
+      <mat-label>Nombre de la campaña</mat-label>
+      <input matInput formControlName="name" placeholder="Ej: Campaña de Verano" required />
+      <mat-error *ngIf="campaignForm.get('name')?.hasError('required')">
+        El nombre de la campaña es obligatorio.
+      </mat-error>
+    </mat-form-field>
+
+    <!-- Teléfonos -->
+    <mat-form-field appearance="outline">
+      <mat-label>Teléfonos</mat-label>
+      <input matInput formControlName="phoneList" placeholder="Ej: 1234567890,0987654321" required />
+      <mat-error *ngIf="campaignForm.get('phoneList')?.hasError('required')">
+        Debes ingresar al menos un teléfono.
+      </mat-error>
+    </mat-form-field>
+
+    <!-- Mensaje -->
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Mensaje</mat-label>
+      <textarea matInput rows="4" formControlName="messageText" placeholder="Escribe el mensaje aquí..." required></textarea>
+      <mat-error *ngIf="campaignForm.get('messageText')?.hasError('required')">
+        El mensaje no puede estar vacío.
+      </mat-error>
+    </mat-form-field>
+  </div>
+
+  <div class="form-actions">
+    <button mat-raised-button type="submit" class="btn-submit-create" >  
+      Crear campaña
+    </button>
+  </div>
+</form>
+
+</div>
