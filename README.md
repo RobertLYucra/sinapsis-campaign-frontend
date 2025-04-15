@@ -13,7 +13,7 @@ Asegúrate de tener instalado:
 - 🌍 [Angular CLI](https://angular.io/cli)
 
 ```bash
-npm install -g @angular/cli@16
+npm install -g @angular/cli@18
 ```
 
 ---
@@ -22,7 +22,7 @@ npm install -g @angular/cli@16
 
 1. **Clonar el repositorio**
 ```bash
-git clone https://github.com/tu-usuario/sinapsis-campaign-frontend.git
+git clone https://github.com/RobertLYucra/sinapsis-campaign-frontend.git
 cd sinapsis-campaign-frontend
 ```
 
@@ -67,7 +67,7 @@ ng e2e
 El frontend está preparado para consumir los servicios del backend NestJS, que expone endpoints documentados con Swagger en:
 
 ```bash
-http://localhost:3000/api/swagger
+http://https://u20p7u4p5i.execute-api.us-east-1.amazonaws.com/api/swagger
 ```
 
 Asegúrate de que el backend esté corriendo en paralelo.
@@ -123,7 +123,4 @@ Pull Requests son bienvenidos. Para cambios importantes, por favor abre un Issue
 
 ---
 
-## 🧾 Licencia
-
-Este proyecto está licenciado bajo [MIT License](LICENSE).
 
