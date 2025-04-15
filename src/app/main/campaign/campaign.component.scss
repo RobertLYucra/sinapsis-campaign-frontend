@@ -66,6 +66,7 @@ body {
 
       mat-icon {
         border: none;
+        overflow: visible;
       }
     }
 
@@ -115,6 +116,12 @@ body {
   }
 }
 
+.btn-send-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .btn-enviar {
   background-color: white;
@@ -129,7 +136,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  padding: 2px 8px;
+  border-radius: 16px;
+  font-weight: 500;
+  font-size: 13px;
+  width: 90%;
   mat-icon {
     font-size: 15px;
     display: flex;
@@ -288,6 +299,10 @@ mat-card {
       font-size: 12px;
     }
   }
+}
+
+.status_envio{
+
 }
 
 
