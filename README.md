@@ -1,6 +1,6 @@
-# 🌐 Frontend - SinapsisCampaign (Angular 16)
+# 🌐 Frontend - SinapsisCampaign (Angular 18)
 
-Este proyecto es el frontend del sistema de campañas de mensajería, desarrollado en **Angular 16** y diseñado para trabajar en conjunto con un backend construido en **NestJS + Serverless Framework**.
+Este proyecto es el frontend del sistema de campañas de mensajería, desarrollado en **Angular 18** y diseñado para trabajar en conjunto con un backend construido en **NestJS + Serverless Framework**.
 
 ---
 
@@ -48,19 +48,6 @@ ng build
 ```
 Los archivos generados se guardarán en el directorio `dist/`.
 
-### 🧪 Ejecutar pruebas unitarias
-```bash
-ng test
-```
-Usando [Karma](https://karma-runner.github.io).
-
-### 🚦 Ejecutar pruebas end-to-end
-```bash
-ng e2e
-```
-*Requiere configurar un runner de e2e (como Protractor o Cypress).*
-
----
 
 ## 📡 Conexión con el Backend
 
@@ -114,13 +101,5 @@ src/
 
 
 ```
-
----
-
-## 🤝 Contribuciones
-
-Pull Requests son bienvenidos. Para cambios importantes, por favor abre un Issue primero.
-
----
 
 
