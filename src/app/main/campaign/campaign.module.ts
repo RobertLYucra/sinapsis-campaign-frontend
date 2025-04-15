@@ -13,3 +13,4 @@ import { CampaignComponent } from './campaign.component';
   exports:[CreateCampaignComponent, UpdateCampaignComponent,CampaignComponent]
 })
 export class CampaignModule { }
+   
