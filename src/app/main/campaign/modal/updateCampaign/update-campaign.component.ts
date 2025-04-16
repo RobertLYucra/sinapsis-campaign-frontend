@@ -71,7 +71,7 @@ export class UpdateCampaignComponent implements OnInit {
     const formValue = this.campaignForm.value;
 
     const campaignData: CreateUpdateCampaignRequest = {
-      idCampaign:this.campaignDataParams.idCampaign,
+      idCampaign: this.campaignDataParams.idCampaign,
       name: formValue.name,
       phoneList: formValue.phoneList.replace(/\s+/g, ''),
       messageText: formValue.messageText,

@@ -37,7 +37,6 @@ export class CreateCampaignComponent implements OnInit {
 
   campaignForm!: FormGroup;
 
-
   public usersList: UserList[] = []
   getAllUsers(): void {
     this.userService.getAllUsers().subscribe({
@@ -49,7 +48,6 @@ export class CreateCampaignComponent implements OnInit {
   }
 
   public campaignResponse: CampaignResponse | undefined;
-
 
   createCampaign(): void {
     if (this.campaignForm.invalid) {
