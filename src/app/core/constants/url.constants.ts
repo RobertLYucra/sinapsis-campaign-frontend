@@ -9,10 +9,10 @@ switch (ENVIROMENT) {
     BASE_CAMPAIGN_NOTIFICATION = 'http://localhost:3000/api/';
     break;
   case 'QA':
-    // BASE_LIQUIDACION = 'https://facturacionactas2.azurewebsites.net/api/';
+    // BASE_CAMPAIGN_NOTIFICATION = 'http://localhost:3000/api/';
     break;
   case 'PROD':
-    BASE_CAMPAIGN_NOTIFICATION = 'https://u20p7u4p5i.execute-api.us-east-1.amazonaws.com/api/' // AZURE PRUEBAS    
+    BASE_CAMPAIGN_NOTIFICATION = 'https://u20p7u4p5i.execute-api.us-east-1.amazonaws.com/api/' // AMAZON PROD    
     break;
   default:
     break;

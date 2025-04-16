@@ -9,8 +9,7 @@ import { CampaignComponent } from './campaign.component';
     CommonModule,
     MaterialModule
   ],
-  declarations: [ CampaignComponent,CreateCampaignComponent, UpdateCampaignComponent],
-  exports:[CreateCampaignComponent, UpdateCampaignComponent,CampaignComponent]
+  declarations: [CampaignComponent, CreateCampaignComponent, UpdateCampaignComponent],
+  exports: [CreateCampaignComponent, UpdateCampaignComponent, CampaignComponent]
 })
 export class CampaignModule { }
-   

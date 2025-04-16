@@ -48,9 +48,6 @@
           </mat-option>
         </mat-select>
       </mat-form-field>
-
-
-
       <div class="btn-group">
         <button type="button" class="btn btn-refresh-filter" (click)="resetFiltros()"><mat-icon>refresh</mat-icon>
           Resetear
@@ -148,14 +145,14 @@
         <!-- Acciones -->
         <ng-container matColumnDef="send_status">
           <th mat-header-cell *matHeaderCellDef>Estado Envío</th>
-          <td mat-cell *matCellDef="let element" class="status_envio" >
-            <ng-container *ngIf="element.send_status === 'Enviar'; else enviado" >
-             <div class="btn-send-container">
-              <button  class="btn-enviar" color="accent"
-              (click)="sendMessagesByCampaign(element)">
-              <mat-icon class="icon-btn">send</mat-icon> <p>Enviar</p>
-            </button>
-             </div>
+          <td mat-cell *matCellDef="let element" class="status_envio">
+            <ng-container *ngIf="element.send_status === 'Enviar'; else enviado">
+              <div class="btn-send-container">
+                <button class="btn-enviar" color="accent" (click)="sendMessagesByCampaign(element)">
+                  <mat-icon class="icon-btn">send</mat-icon>
+                  <p>Enviar</p>
+                </button>
+              </div>
             </ng-container>
             <ng-template #enviado>
               <span class="badge-enviado">
